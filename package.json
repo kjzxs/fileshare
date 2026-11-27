@@ -1,1 +1,31 @@
-{"dependencies":{"@prisma/composer":"latest","@prisma/composer-prisma-cloud":"latest"},"description":"文件快传：部署在 Prisma Compute 上的免费文件分享小应用","devDependencies":{"bun-types":"latest","prisma":"latest","typescript":"latest"},"name":"prisma-fileshare-demo","private":true,"scripts":{"build":"bun build src/server.ts --target=bun --outfile dist/server.mjs","dev":"prisma dev","typecheck":"tsc --noEmit"},"type":"module","version":"1.0.0"}
+{
+  "dependencies": {
+    "@prisma/composer": "latest",
+    "@prisma/composer-prisma-cloud": "latest",
+    "@prisma/orm-postgres": "8.0.0-rc.25",
+    "effect": "4.1.4",
+    "pg": "^8.22.0"
+  },
+  "description": "文件快传：部署在 Prisma Compute 上的免费文件分享小应用",
+  "devDependencies": {
+    "@types/pg": "^8.20.0",
+    "bun-types": "latest",
+    "prisma": "latest",
+    "typescript": "latest"
+  },
+  "name": "prisma-fileshare-demo",
+  "private": true,
+  "scripts": {
+    "build": "bun build src/server.ts --target=bun --outfile dist/server.mjs",
+    "dev": "prisma dev",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "version": "1.0.0",
+  "overrides": {
+    "@effect/platform-bun": "4.1.4",
+    "@effect/platform-node": "4.1.4",
+    "@effect/platform-node-shared": "4.1.4",
+    "effect": "4.1.4"
+  }
+}
